@@ -82,5 +82,23 @@
 
           echo $myCar -> message();
     ?>
+
+    <h2>strings</h2>
+    <?php
+        echo strlen("Hello world!"); // outputs 12
+        echo str_word_count("Hello world!"); // outputs 2
+        echo strpos("Hello world!", "H");
+         // outputs "Hello world!"
+    ?>
+    <h2>Modify</h2>
+    <?php
+        $r = "Hello world!";
+        echo strtoupper($r);
+        echo strtolower($r);
+        echo strrev($r);
+        echo str_replace("world", "Dolly", $r);
+        echo trim($r);
+        explode("Hello world!", "o");
+    ?>
 </body>
 </html>
